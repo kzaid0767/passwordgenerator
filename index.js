@@ -5,15 +5,28 @@ const characters =["A","B","C","D","E","F","G","H","I","J","K","L","M","N","O","
     "/"
 ];
 let passwordLength = 9
-let password1 = ''
+const lengthInputEl = document.querySelector('#lengthpassword')
 const password1El = document.querySelector('#password1')
+const password2El = document.querySelector('#password2')
+
+
 function main(){
-    for(let i=0; i<passwordLength; i++){
-        password1 += characters[randomIndex()]
+    passwordLength = parseInt(lengthInputEl.value) 
+    if( passwordLength >=8 && passwordLength <= 20){
+        password1El.textContent= passwordMaker()
+        password2El.textContent= passwordMaker()
     }
-    password1El.textContent= password1
+
 }
 
 function randomIndex(){
     return Math.floor(Math.random()*characters.length)
+}
+
+function passwordMaker(){
+    let password = ''
+    for(let i=0; i<passwordLength; i++){
+        password += characters[randomIndex()]
+    }
+    return password
 }
