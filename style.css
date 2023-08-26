@@ -1,0 +1,16 @@
+* {
+    box-sizing: border-box;
+}
+
+body{
+    background-color: #1C1C1C;
+}
+
+.main{
+    background-color:#D1FAE5 ;
+}
+
+.generator-btn{
+    background-color: #10B981;
+    color: #FFFFFF;
+}
