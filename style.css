@@ -46,7 +46,7 @@ button{
     margin-top: 2vh;
 }
 
-.ptext{
+.ptext, .clickmessage{
     color: #6B7280;
     font-family: 'Inter', sans-serif; 
     font-weight: 400;
@@ -73,15 +73,17 @@ input{
     grid-template-columns: 1fr 1fr;
 }
 
+.clickmessage {
+    grid-column-end: span 2;
+    margin-top: 0;
+}
+
 .password{
     width: 95%;
     min-height: 5vh;
     background-color: #273549;
     color: #5DEF92;
     margin: 1%;
-    display: inline-block;
-    display: flex;
-    justify-content: center;
-    align-items: center;
+    text-align: center;
     font-size: 3vw;
 }

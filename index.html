@@ -23,8 +23,9 @@
         <button onclick="main()" class=" curve generator-btn">Generate password</button>
         <div class="grayline"></div>
         <div class="password-cont">
-            <div id="password1" class="curve password"></div>
-            <div id="password2" class="curve password"></div>
+            <p class="clickmessage">Click to copy your password</p>
+            <p onclick="copyPasswordOne()" id="password1" class="curve password"></p>
+            <p onclick="copyPasswordTwo()" id="password2" class="curve password"></p>
         </div>
     </div>
     <script src="index.js"></script>

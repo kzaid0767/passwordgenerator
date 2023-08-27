@@ -13,8 +13,8 @@ const password2El = document.querySelector('#password2')
 function main(){
     passwordLength = parseInt(lengthInputEl.value) 
     if( passwordLength >=8 && passwordLength <= 20){
-        password1El.textContent= passwordMaker()
-        password2El.textContent= passwordMaker()
+        password1El.textContent = passwordMaker()
+        password2El.textContent = passwordMaker()
     }
 
 }
@@ -29,4 +29,15 @@ function passwordMaker(){
         password += characters[randomIndex()]
     }
     return password
+}
+
+// The function that copies to clipboard
+function copyPasswordOne(){
+    navigator.clipboard.writeText(password1El.textContent)
+    alert('Password copied')
+}
+
+function copyPasswordTwo(){
+    navigator.clipboard.writeText(password2El.textContent)
+    alert('Password copied')
 }
