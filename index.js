@@ -33,11 +33,15 @@ function passwordMaker(){
 
 // The function that copies to clipboard
 function copyPasswordOne(){
-    navigator.clipboard.writeText(password1El.textContent)
-    alert('Password copied')
+    if(password1El.textContent){
+        navigator.clipboard.writeText(password1El.textContent)
+        alert('Password copied')
+    }
 }
 
 function copyPasswordTwo(){
-    navigator.clipboard.writeText(password2El.textContent)
-    alert('Password copied')
+    if(password2El.textContent){
+        navigator.clipboard.writeText(password2El.textContent)
+        alert('Password copied')
+    }
 }
