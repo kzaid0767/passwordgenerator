@@ -24,13 +24,14 @@
         <div class="button-section">
             <div id="characters-div" class="specialcharacters dark-characters">
                 <input type="checkbox" id="specialcharacters" name="specialcharacters" />
-                <label for="specialcharacters" ">Special Characters</label>
+                <label for="specialcharacters" ">With Special Characters</label>
             </div>
-            <button class="dark-button">Generate passwords</button>
+            <button id="main-button" class="dark-button">Generate passwords</button>
         </div>
         <div id="password-container" class="password-container dark-container">
-            <p class="generated-password"></p>
-            <p class="generated-password"></p>
+            <input readonly type="text" id="password-1" class="generated-password" >
+            
+            <input readonly type="text" id="password-2" class="generated-password" >
         </div>
     </div>
     <script src="./index.js"></script>
