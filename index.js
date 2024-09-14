@@ -26,7 +26,7 @@ const mainButton = document.querySelector('#main-button')
 const password1Holder = document.querySelector('#password-1')
 const password2Holder = document.querySelector('#password-2')
 
-let passwordLength = 12
+let passwordLength = 15
 let password1 = ''
 let password2 = ''
 let isLightMode = false
